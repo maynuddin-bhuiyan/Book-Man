@@ -7,7 +7,7 @@ const Usedata = () => {
 
     //Loaed Data
     useEffect(() => {
-        fetch('http://localhost:7000/Categorywise')
+        fetch('https://whispering-gorge-92937.herokuapp.com/Categorywise')
             .then(res => res.json())
             .then(data => setBook(data))
     },

@@ -18,7 +18,7 @@ const DeatialsOder = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:7000/student`)
+        fetch(`https://whispering-gorge-92937.herokuapp.com/student`)
             .then(res => res.json())
             .then(data => {
                 setDetiles(data);

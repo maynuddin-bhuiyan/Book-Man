@@ -8,7 +8,7 @@ const NewStudent = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
   
-      axios.post('http://localhost:7000/student', data)
+      axios.post('https://whispering-gorge-92937.herokuapp.com/student', data)
         .then(res => {
           if (res.data.insertedId) {
             alert('Included A Data, Successfully....Added A New Tourism Place');
