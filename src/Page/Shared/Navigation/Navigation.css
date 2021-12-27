@@ -1,0 +1,32 @@
+.navpart{
+    margin-left: 150px;
+  
+}
+
+.Itam{
+    margin: 20px;
+    color: #000000 !important;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none !important;
+  
+}
+
+
+
+
+
+.Itam-login {
+    margin: 10px !important;
+    background: #0021A7 !important;
+    padding: 10px 40px !important;
+    border-radius: 3px !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
+    color:  aliceblue !important;
+    text-decoration: none !important;
+}

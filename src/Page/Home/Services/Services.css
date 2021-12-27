@@ -1,0 +1,50 @@
+.Services{
+    padding: 100px;
+}
+
+.Services h1 {
+    color: #0021A7;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+}
+
+.Services img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.srevice{
+    width: 275px;
+    height: 305px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+
+}
+
+.srevice h2 {
+    font-size: 25px;
+    margin: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.srevice p {
+    font-size: 18px;
+    color: #555555;
+    padding: 10px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.Services img:hover {
+    background: #0021A7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}

@@ -1,0 +1,59 @@
+.PhotoOne{
+    width: 1034px;
+    position: absolute;
+    left: -1px;
+    top: -43px;
+}
+
+.PhotoTwo {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: -180px;
+    bottom: 1px;
+}
+
+.FullBanner{
+    padding: 100px;
+    text-align: left;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.FullBanner .PhotoReleted{
+    position: relative;
+}
+
+.FullBanner h1 {
+    margin-top: 52px;
+    margin-bottom: 98px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #0021A7;
+    width: 860px;
+}
+
+.FullBanner p {
+    margin-bottom: 98px;
+    width: 490px;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.FullBanner .Button {
+    margin-bottom: 98px;
+    width: 336px;
+    font-size: 28px;
+    background: #0021A7;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+
+.FullBanner .Button:hover {
+    background: none;
+    border: 2px solid #0021A7;
+    color: #000000;
+}
