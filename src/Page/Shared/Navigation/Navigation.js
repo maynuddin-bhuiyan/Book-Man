@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navigation.css';
 import logo from '../../../images/logo/logo.png'
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -22,12 +22,14 @@ const Navigation = () => {
           <Nav className="me-auto navpart"  >
 
             <Link to="/home" className="Itam">Home</Link>
-            <Link to="/student" className="Itam">Student</Link>
-
             
-            <HashLink className="Itam" smooth to="/home#emoloyes">Emoloyes</HashLink>
-            <HashLink className="Itam" smooth to="/home#colleges">Colleges</HashLink>
+            <HashLink className="Itam" smooth to="/home#colleges">Category</HashLink>
+            
+            <HashLink className="Itam" smooth to="/home#emoloyes">Learning</HashLink>
+            
             <HashLink className="Itam" smooth to="/home#blogs">Blogs</HashLink>
+
+            <Link to="/courses" className="Itam">Courses</Link>
             <Link className="Itam" Link to="/dashboard">Dashboard</Link>
           </Nav>
           <Nav className="navpart">

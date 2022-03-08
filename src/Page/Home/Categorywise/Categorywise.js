@@ -1,28 +1,36 @@
 import React from 'react';
 import Usedata from '../../Usedata/Usedata';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Books from '../Books/Books';
 import './Categorywise.css';
-import './Categorywise.css'
+import { Link } from 'react-router-dom';
+
+
 
 const Categorywise = () => {
-    const [book] = Usedata([]);
+    const [course] = Usedata([]);
 
-    console.log(book);
+    console.log(course);
+    
     return (
         <div className='Categorywise'>
-            <h1>Browse Courses
-                Categorywise</h1>
-            <p>Education began in prehistory, as adults  trained
-                the young in the knowledge and skills deemed
-                necessary  in their society</p>
+
+            <Link className='CategorywiseIcon' to='home'>
+
+            <ArrowBackIosNewIcon  />BookReader
+
+            </Link>
+            
+            <h1>The Most Important Course Are</h1>
+            <p>A professional course feeds our continuous need to upgrade our skills. It enables candidate to identify their strengths as well as weaknesses.</p>
 
             <div className="Book">
 
                 {
-                    book.map(books => <Books
+                    course.map(course => <Books
 
-                        key={books._id}
-                        books={books}
+                        key={course._id}
+                        courses ={course}
 
                     />)
                 }

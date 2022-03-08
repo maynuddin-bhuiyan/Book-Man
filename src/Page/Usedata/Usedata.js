@@ -2,18 +2,18 @@ import { useState, useEffect } from "react";
 
 const Usedata = () => {
     //State Declare
-    const [book, setBook] = useState([]);
+    const [course, setCourse] = useState([]);
 
 
     //Loaed Data
     useEffect(() => {
-        fetch('https://whispering-gorge-92937.herokuapp.com/Categorywise')
+        fetch('http://localhost:7000/course')
             .then(res => res.json())
-            .then(data => setBook(data))
+            .then(data => setCourse(data))
     },
         []);
 
-    return [book, setBook]
+    return [course, setCourse]
 }
 
 export default Usedata;

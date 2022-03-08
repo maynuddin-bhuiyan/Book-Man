@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button, ButtonGroup, FormControl, Input, InputAdornment, InputLabel } from '@mui/material';
+import React, { useState } from 'react';
+import { Button, ButtonGroup,  Input, InputAdornment, InputLabel } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import LockClockIcon from '@mui/icons-material/LockClock';
 import { Link } from 'react-router-dom';
@@ -9,12 +9,33 @@ import icon1 from '../../../images/Login/facebook-logo.png';
 import icon2 from '../../../images/Login/linkedin.png';
 import icon3 from '../../../images/Login/google-plus.png';
 import UseAuth from '../../../Hooks/UseAuth';
+import { blueGrey } from '@mui/material/colors';
 
 
 
 const Login = () => {
 
-  const { loginWithGoogle } = UseAuth();
+  const { loginWithGoogle, isLoding, logInUser } = UseAuth();
+
+  const [logingData, serLogingData] = useState({});
+
+  const onBluer = (bler) => {
+    const feild = bler.target.name;
+    const value = bler.target.value;
+    const newLoingData = {...logingData};
+    newLoingData[feild] = value;
+    serLogingData(newLoingData);
+    console.log(newLoingData);
+
+
+  }
+
+
+
+
+
+
+
   return (
     <div className='Log-In'>
 
@@ -37,6 +58,8 @@ const Login = () => {
           }
           placeholder='User name/Email'
           type='email'
+          name='email'
+          onBlur={onBluer}
         />
         <br></br>
         <br></br>
@@ -52,6 +75,8 @@ const Login = () => {
 
           placeholder='Password'
           type='Password'
+          name='password'
+          onBlur={onBluer}
         />
         <br></br>
 

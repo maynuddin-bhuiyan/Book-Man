@@ -13,6 +13,13 @@ import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import Dashboard from './Page/DashboardPart/Dashboard/Dashboard';
 import PrivateRoute from './Page/Login/PrivateRoute/PrivateRoute';
 import DeatialsOder from './Page/Home/DeatialsOder/DeatialsOder';
+import Categorywise from './Page/Home/Categorywise/Categorywise';
+import Access from './Page/Access/Access';
+import Certification from './Page/Certification/Certification';
+import Instructor from './Page/Instructor/Instructor';
+import CourseDetails from './Page/CourseDetails/CourseDetails';
+import InstructorDetails from './Page/InstructorDetails/InstructorDetails';
+import PrivacyPolicy from './Page/PrivacyPolicy/PrivacyPolicy';
 
 
 function App() {
@@ -33,6 +40,11 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
+
+          <Route path="/privacyPolicy">
+            <PrivacyPolicy />
+          </Route>
+
           <PrivateRoute exact path="/student">
             <Student />
           </PrivateRoute>
@@ -47,6 +59,43 @@ function App() {
           <Route path="/registration">
             <Registration />
           </Route>
+
+          <PrivateRoute path="/courses">
+            <Categorywise />
+          </PrivateRoute>
+
+          <PrivateRoute path="/instructor">
+            <Instructor />
+          </PrivateRoute>
+
+          <PrivateRoute path="/access">
+            <Access />
+          </PrivateRoute>
+          <PrivateRoute path="/certification">
+            <Certification />
+          </PrivateRoute>
+
+
+          
+         
+
+          <Route path="/courseDetails/:id">
+            <CourseDetails />
+          </Route>
+
+          <Route path="/instructorDetails/:id">
+            <InstructorDetails />
+          </Route>
+
+
+          
+
+       
+
+
+
+
+
 
         </Switch>
 

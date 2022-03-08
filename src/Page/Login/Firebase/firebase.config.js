@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBhqKTMfvPXyDxo-YR9xjRUnISwP3BC4IM",
-  authDomain: "book-reader-5c8e2.firebaseapp.com",
-  projectId: "book-reader-5c8e2",
-  storageBucket: "book-reader-5c8e2.appspot.com",
-  messagingSenderId: "1098284529862",
-  appId: "1:1098284529862:web:ba5ae2cfdbb37054c7bfc7"
+  apiKey: "AIzaSyArz6LJxnDYYBPURU_oi40JGPXukeoQCfk",
+  authDomain: "book-man-617ae.firebaseapp.com",
+  projectId: "book-man-617ae",
+  storageBucket: "book-man-617ae.appspot.com",
+  messagingSenderId: "506139841335",
+  appId: "1:506139841335:web:f30773befc54c7eda540b2"
 };
 
 export default firebaseConfig;

@@ -2,60 +2,92 @@ import React from 'react';
 import './Footer.css';
 import logo from '../../../images/logo/logo.png'
 import { Grid, Typography } from '@mui/material';
+import FacebookIcon from '../../../images/social/facebook.png';
+import TwitterIcon from '../../../images/social/twitter.png';
+import LinkedInIcon from '../../../images/social/linkedin.png';
+import GitHubIcon from '../../../images/social/github.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div className='Footer'>
 
 
-            <Grid className='Footer_Text' container spacing={2} columns={16}>
+<Grid className='Footer_Text' container spacing={2} columns={12}>
 
-                <Grid className='Text' item xs={4} md={4}>
-                    <Typography variant="h1" component="h2">
-                        <img src={logo} alt="" />
-                    </Typography>
-                    <Typography variant="h6" >
-                        <p>The best social network for <br></br>
-                            business</p>
-                    </Typography>
+<Grid className='Text' item xs={4} md={4}>
+    <Typography>
+    <Link className='text-alin' to="/home">
+        <img src={logo} alt="" /></Link>
+    </Typography>
+    <Typography variant="h6" >
+        <p>Most Popular Types Of CCTV Cameras Available Here</p>
+    </Typography>
 
-                </Grid>
-                <Grid className='Text' item xs={4} md={4}>
-                    <Typography variant="h5" component="h2">
-                        Quick Link <br /><br /><br />
+</Grid>
+<Grid className='Link' item xs={4} md={4}>
+    <Typography>
 
-                        <ul>
-                            <li>Help center</li>
-                            <li>Apps</li>
-                            <li>Privacy Policy</li>
-                            <li>Terms &amp; Conditions</li>
-                        </ul>
-                    </Typography>
-                </Grid>
-                <Grid className='Text' item xs={4} md={4}>
-                    <Typography variant="h5" component="h2">
-                        Get started <br /> <br /> <br />
+        <h2>Quick Link </h2>
 
+        <ul className='UnorderLisrt'>
+            <Link className='Itam' to='supportCenter'>
+                <li>Help Center Support</li>
+            </Link>
 
-                        <a href="https://condescending-jennings-f3ad71.netlify.app/#" target='_blank'> With Maynuddin Bhuiyan</a>
-                    </Typography>
-                </Grid>
-                <Grid className='Text' item xs={4} md={4}>
-                    <Typography variant="h5" component="h2">
-                        Contact Us <br /> <br /> <br />
+            <Link className='Itam' to='singlepage'>
+                    <li>Best Courses
+</li>
+            </Link>
+
+            <Link className='Itam' to='privacyPolicy'>
+                    <li>Privacy Policy</li>
+            </Link>
 
 
-                        <ul>
-                            <li>mayuddinbhuiyan.com</li>
-                            <li>01908145097</li>
-
-                        </ul>
-                    </Typography>
-                </Grid>
+            <Link className='Itam' to='termsConditions'>
+                  <li>Terms &amp; Conditions</li>
+            </Link>
+            
+            
+            
+        </ul>
+    </Typography>
+</Grid>
 
 
 
-            </Grid>
+
+<Grid className='Contact' item xs={4} md={4}>
+    <Typography >
+        <h2>Contact Us</h2>
+
+       <div className="Contact-text">
+           <h6>eye-world.com</h6>
+           <h6>01908145097</h6>
+           </div>
+            
+            
+
+        
+
+            <div className="Contact-img">
+        <a href="https://www.facebook.com/freelancer.maynuddin.7" target='_blank'> <img src={FacebookIcon} alt="" /></a>
+
+        <a href="https://www.linkedin.com/in/maynuddin-bhuiyan-7909a5216/" target='_blank'> <img src={LinkedInIcon} alt="" /></a>
+
+        <a href="https://github.com/uxmain" target='_blank'> <img src={GitHubIcon} alt="" /></a>
+
+        <a href="https://twitter.com/MaynuddinBh/" target='_blank'> <img src={TwitterIcon} alt="" /></a>
+
+        </div>
+    </Typography>
+</Grid>
+
+
+
+
+</Grid>
 
         </div>
     );

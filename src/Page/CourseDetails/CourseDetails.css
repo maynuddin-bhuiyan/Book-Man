@@ -1,0 +1,61 @@
+.CourseDetails .BackIcon{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 30px;
+    margin-top: 70px !important;
+}
+
+.CourseDetails h1{
+    margin: 30px;
+    width: 700px !important;
+    line-height: 70px;
+    margin-left: 70px !important;
+}
+
+
+
+
+.CourseDetailsItam .DetailsImg {
+    width: 100%;
+    padding: 100px;
+    border-radius: 140px;
+}
+
+.CourseDetailsItam h1 {
+    width: 1050px !important;
+}
+
+.CourseDetailsItam p {
+    width: 800px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.CourseDetailsText{
+    padding: 100px;
+    position: relative;
+}
+
+.CourseDetailsText .Requirements{
+    color: blue;
+    display: block;
+}
+
+.CourseDetailsText h2 {
+    text-transform: capitalize;
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+.includes {
+    position: absolute;
+    top: 900px;
+    right: 20px;
+    background: red;
+    padding: 10px;
+    color: aliceblue;
+    width: 400px;
+}

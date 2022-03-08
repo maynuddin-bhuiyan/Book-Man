@@ -1,6 +1,31 @@
+.Books{
+    cursor: pointer;
+}
 
+
+.Booker img{
+    padding: 10px;
+    height: 250px;
+    border-radius: 20px;
+}
 
 .Booker{
     padding: 10px;
     margin-top: 50px;
+    
 }
+
+
+.Booker .Course {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.Booker .Name{
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+

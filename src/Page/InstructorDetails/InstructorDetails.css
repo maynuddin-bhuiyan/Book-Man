@@ -1,0 +1,13 @@
+.InstructorDetails .BackIcon{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 30px;
+    margin-top: 70px !important;
+}
+
+.InstructorDetails h1{
+    margin: 30px;
+    width: 700px !important;
+    line-height: 70px;
+    margin-left: 70px !important;
+}

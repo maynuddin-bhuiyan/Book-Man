@@ -11,20 +11,24 @@ import { useHistory } from 'react-router-dom';
 
 const Books = (props) => {
 
-    const {img,name,degeneration,locationText,userCardText,_id} = props.books;
+    const {img, course, name, degeneration, locationText, userCardText, id} = props.courses;
   
     const history = useHistory();
 
-    const handleAddedItam = (id) => {
-      const uri = `/detial/${_id}`;
+    const handleCoursesAdded = (id) => {
+      const uri = `/courseDetails/${id}`;
       history.push(uri);
     }
 
 
     return (  
-   <div className="Books">
+      
+   <div onClick={
+    () => {
+      handleCoursesAdded(id);
+    }} className="Books">
 
-        <Card className="Booker" sx={{ maxWidth: 330 }}>
+        <Card className="Booker" sx={{ maxWidth: 450 }}>
       <CardMedia
         component="img"
         height="140"
@@ -32,8 +36,13 @@ const Books = (props) => {
         alt="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+
+      <Typography className='Name' gutterBottom variant="h4" component="div">
           {name}
+        </Typography>
+
+        <Typography className='Course' gutterBottom variant="h5" component="div">
+          {course}
         </Typography>
         <Typography variant="body2" color="text.secondary">
         {degeneration}
@@ -48,13 +57,13 @@ const Books = (props) => {
       </CardActions>
       <Button onClick={
               () => {
-                handleAddedItam(_id);
+                handleCoursesAdded(id);
               }}>View Details
               </Button>
     </Card>
     </div>
     
-
+ 
     );
 };
 

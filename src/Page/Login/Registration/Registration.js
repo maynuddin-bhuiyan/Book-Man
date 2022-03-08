@@ -3,6 +3,8 @@ import { Button, ButtonGroup, FormControl, Input, InputAdornment} from '@mui/mat
 import EmailIcon from '@mui/icons-material/Email';
 import LockClockIcon from '@mui/icons-material/LockClock';
 import { Link } from 'react-router-dom';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GoogleIcon from '@mui/icons-material/Google';
 import './Registration.css';
 
 import icon1 from '../../../images/Login/facebook-logo.png';
@@ -12,6 +14,7 @@ import icon3 from '../../../images/Login/google-plus.png';
 import { AccountCircle } from '@mui/icons-material';
 import UseAuth from '../../../Hooks/UseAuth';
 import { useHistory } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Registration = () => {
 
@@ -19,8 +22,9 @@ const Registration = () => {
 
 
 
-  const {  bandNewUser, loginWithGoogle } = UseAuth();
+  const {  bandNewUser,  isLogindata, userErrer, user, signInWithGoogle, signInWithFacebook } = UseAuth();
   const hostory = useHistory();
+  const location = useLocation();
 
 
   const onBlure = e => {
@@ -41,9 +45,18 @@ const handelOnclick = e => {
       return
   }
 
-  bandNewUser(logindata.email, logindata.password, logindata.name, hostory);
+  bandNewUser(logindata.email, logindata.password, logindata.name, location, hostory);
 }
 
+
+ const handelOnClickGoogle = () => {
+    signInWithGoogle(location, hostory)
+  }
+
+
+  const handelOnClickFacebook = () => {
+    signInWithFacebook(location, hostory)
+  }
 
 
 
@@ -137,9 +150,10 @@ const handelOnclick = e => {
 
           <ButtonGroup className='Button-Images'>
 
-      <Button  sx={{ width: '50%' }} type="Submit"><img src={icon1} alt="" /></Button>
-      <Button  sx={{ width: '50%' }} type="Submit"><img src={icon2} alt="" /></Button>
-      <Button onClick={loginWithGoogle}  sx={{ width: '50%' }} type="Submit"><img src={icon3} alt="" /></Button>
+          <Button onClick={handelOnClickGoogle} sx={{ width: '50%', border: 'none' }} type="Submit"><GoogleIcon className='GoogleIcon' /> </Button>
+
+<br />
+<Button onClick={handelOnClickFacebook} sx={{ width: '50%', border: 'none' }} type="Submit"> <FacebookIcon className='GoogleIcon' /> </Button>
       </ButtonGroup>
 
       <br></br>

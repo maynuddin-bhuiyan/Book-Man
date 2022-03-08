@@ -1,0 +1,30 @@
+.Customer{
+    padding: 20px 150px 200px;
+}
+
+.Customer h1{
+    width: 600px;
+}
+
+
+.Customer p{
+    width: 350px;
+    font-size: 18px;
+    color: #555555;
+}
+
+
+.imeages{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 100px;
+    
+}
+
+.imeages img{
+    width: 100%;
+    padding-right: 50px;
+    line-height: 20px;
+    cursor: pointer;
+   
+}
