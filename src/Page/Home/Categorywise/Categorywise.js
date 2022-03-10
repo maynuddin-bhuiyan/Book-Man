@@ -22,7 +22,7 @@ const Categorywise = () => {
             </Link>
             
             <h1>The Most Important Course Are</h1>
-            <p>A professional course feeds our continuous need to upgrade our skills. It enables candidate to identify their strengths as well as weaknesses.</p>
+            <p>A professional course feeds our continuous need to upgrade our skills. It enables candidates  to identify their strengths as well as weaknesses.</p>
 
             <div className="Book">
 
