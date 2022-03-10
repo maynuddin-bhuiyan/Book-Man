@@ -38,7 +38,7 @@ const Navigation = () => {
 
 
               user?.email ?
-                <Button className="Itam-login" variant="outlined" onClick={logOutUser}> Log-Out</Button>
+                <Button className="Itam-login" variant="outlined" onClick={logOutUser}> LogOut</Button>
 
                 :
 
@@ -46,7 +46,7 @@ const Navigation = () => {
                   <Button  className="Itam-login" variant="outlined">Log In</Button>
                 </Link> &&
 
-                <Link to="/registration">
+                <Link className='RegistrationLink' to="/registration">
                   <Button className="Itam-login" variant="outlined">Registration</Button>
                 </Link>
 

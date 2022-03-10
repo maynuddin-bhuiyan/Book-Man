@@ -23,9 +23,9 @@ const Services = () => {
             <h1>Expand your career opportunities</h1>
 
 
-            <Grid container spacing={2} columns={16}>
+            <Grid className='SmallDives' container spacing={2} columns={16}>
 
-                <Grid item xs={4}>
+                <Grid  item xs={4} sm={16} md={4} >
                     <Link className='LinkItam' to="instructor">
                         <div className='srevice'>
                             <img src={book1} alt="" />
@@ -41,7 +41,7 @@ const Services = () => {
                     </Link>
                 </Grid>
 
-                <Grid item xs={4}>
+                <Grid item xs={4} sm={16} md={4}>
                     <Link className='LinkItam' to="courses">
                         <div className='srevice'>
                             <img src={book2} alt="" />
@@ -55,7 +55,7 @@ const Services = () => {
                     </Link>
                 </Grid>
 
-                <Grid item xs={4}>
+                <Grid item xs={4} sm={16} md={4}>
                     <Link className='LinkItam' to="access">
                         <div className='srevice'>
 
@@ -71,7 +71,7 @@ const Services = () => {
 
                 </Grid>
 
-                <Grid item xs={4}>
+                <Grid item xs={4} sm={8} md={4}>
                     <Link className='LinkItam' to="certification">
                         <div className='srevice'>
 

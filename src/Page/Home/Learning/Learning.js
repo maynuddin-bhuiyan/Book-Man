@@ -12,7 +12,7 @@ const Learning = () => {
             <Grid container spacing={2}>
                 <Grid item xs={10} md={6}>
                     <div className='LearningText'>
-                        <Button># NO 1 Platform for learning</Button>
+                        <Button className='LearningButton'># NO 1 Platform for learning</Button>
                         <h1>Best platform for gain your
                             skill and learning new
                             things

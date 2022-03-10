@@ -9,13 +9,19 @@ import icon1 from '../../../images/Login/facebook-logo.png';
 import icon2 from '../../../images/Login/linkedin.png';
 import icon3 from '../../../images/Login/google-plus.png';
 import UseAuth from '../../../Hooks/UseAuth';
-import { blueGrey } from '@mui/material/colors';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GoogleIcon from '@mui/icons-material/Google';
+import { useHistory } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 
 const Login = () => {
 
-  const { loginWithGoogle, isLoding, logInUser } = UseAuth();
+  const { signInWithGoogle, isLoding, logInUser,  signInWithFacebook } = UseAuth();
+
+  const hostory = useHistory();
+  const location = useLocation();
 
   const [logingData, serLogingData] = useState({});
 
@@ -28,6 +34,16 @@ const Login = () => {
     console.log(newLoingData);
 
 
+  }
+
+ 
+  const handelOnClickGoogle = () => {
+    signInWithGoogle(location, hostory)
+  }
+
+
+  const handelOnClickFacebook = () => {
+    signInWithFacebook(location, hostory)
   }
 
 
@@ -53,7 +69,7 @@ const Login = () => {
           id="input-with-icon-adornment"
           startAdornment={
             <InputAdornment position="start">
-              <EmailIcon />
+              <EmailIcon sx={{color: '#1d37a3'}} />
             </InputAdornment>
           }
           placeholder='User name/Email'
@@ -69,7 +85,7 @@ const Login = () => {
           id="input-with-icon-adornment"
           startAdornment={
             <InputAdornment position="start">
-              <LockClockIcon />
+              <LockClockIcon sx={{color: '#1d37a3'}} />
             </InputAdornment>
           }
 
@@ -83,16 +99,14 @@ const Login = () => {
 
         <small style={{ color: '#000', marginRight: '200px', fontWeight: '700' }} >Forget Password</small>
         <br></br>
-        <br></br>
-        <br></br><br></br>
+        
         <br></br>
 
 
         <Button variant='contained'> Log-In </Button>
 
 
-        <br></br>
-        <br></br>
+        
         <br></br>
         <br></br>
         <Button variant='contained'> OR </Button>
@@ -103,13 +117,14 @@ const Login = () => {
 
 
 
-          <Button sx={{ width: '50%' }} type="Submit"><img src={icon1} alt="" /></Button>
-          <Button sx={{ width: '50%' }} type="Submit"><img src={icon2} alt="" /></Button>
-          <Button onClick={loginWithGoogle} sx={{ width: '50%' }} type="Submit"><img src={icon3} alt="" /></Button>
+         
+          <Button onClick={handelOnClickFacebook} sx={{ width: '50%' }} >
+            <FacebookIcon className='GoogleIcon' />
+            </Button>
+          <Button onClick={handelOnClickGoogle} sx={{ width: '50%' }} ><GoogleIcon className='GoogleIcon' /> </Button>
         </ButtonGroup>
 
         <br></br>
-        <br></br> <br></br>
         <br></br>
 
         <Link to='/registration' style={{ textDecoration: 'none', color: '#FFFFFF' }}>

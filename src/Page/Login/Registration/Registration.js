@@ -7,9 +7,6 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import GoogleIcon from '@mui/icons-material/Google';
 import './Registration.css';
 
-import icon1 from '../../../images/Login/facebook-logo.png';
-import icon2 from '../../../images/Login/linkedin.png';
-import icon3 from '../../../images/Login/google-plus.png';
 
 import { AccountCircle } from '@mui/icons-material';
 import UseAuth from '../../../Hooks/UseAuth';
@@ -62,9 +59,9 @@ const handelOnclick = e => {
 
     return (
         <div className='Log-In'>
-             <h1>Registration</h1>
+             <h1 className='Header'>Registration</h1>
 
-            <br></br><br></br>
+            
 
 {<form onClick={handelOnclick}> 
   
@@ -77,7 +74,7 @@ const handelOnclick = e => {
           id="input-with-icon-adornment"
           startAdornment={
             <InputAdornment position="start">
-              <AccountCircle />
+              <AccountCircle sx={{color: '#1d37a3'}} />
             </InputAdornment>
           }
           placeholder='User name'
@@ -88,7 +85,7 @@ const handelOnclick = e => {
           id="input-with-icon-adornment"
           startAdornment={
             <InputAdornment position="start">
-              <EmailIcon />
+              <EmailIcon sx={{color: '#1d37a3'}} />
             </InputAdornment>
           }
           placeholder='Email'
@@ -104,7 +101,7 @@ const handelOnclick = e => {
           id="input-with-icon-adornment"
           startAdornment={
             <InputAdornment position="start">
-              <LockClockIcon />
+              <LockClockIcon sx={{color: '#1d37a3'}} />
             </InputAdornment>
           }
 
@@ -119,7 +116,7 @@ const handelOnclick = e => {
           id="input-with-icon-adornment"
           startAdornment={
             <InputAdornment position="start">
-              <LockClockIcon />
+              <LockClockIcon sx={{color: '#1d37a3'}} />
             </InputAdornment>
           }
 
@@ -130,20 +127,17 @@ const handelOnclick = e => {
           onBlur={onBlure}
         />
 
-<small style={{ color: '#000', fontWeight: '700' }} >By continue you agree to conditions and privacy notice</small> 
-        <br></br>
+<small style={{ color: 'blue', fontWeight: '700', padding: '20px' }} >By continue you agree to conditions and privacy notice</small> 
+        
 
 
 
-          <Button variant='contained' type="Submit"> Registration </Button>
+          <Button sx={{marginBottom: '20px'}} variant='contained' type="Submit"> Registration </Button>
       </FormControl>
 
       </form>}
 
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      
       <Button variant='contained'> OR </Button>
       <br></br>
       <br></br>

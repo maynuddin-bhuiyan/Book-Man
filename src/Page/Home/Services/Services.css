@@ -51,3 +51,43 @@
 .LinkItam{
     text-decoration: none !important;
 }
+
+
+
+
+
+
+
+
+
+
+ /* Mobile */
+
+ @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .SmallDives{
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .srevice {
+        width: 200px;
+        height: 350px;
+        box-shadow: rgb(0 0 0 / 5%) 0px 5px 15px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+    .Services h1 {
+        color: #0021A7;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: sans-serif;
+        margin-bottom: 100px;
+        width: 200px;
+    }
+
+
+
+    }

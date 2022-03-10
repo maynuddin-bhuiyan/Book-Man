@@ -116,8 +116,8 @@ const Access = () => {
                     <strong>Was this article helpful?</strong>
 
                     </h5> 
-                    <ThumbUpAltIcon /> 
-                    <ThumbDownAltIcon />
+                    <ThumbUpAltIcon sx={{color: '#1d37a3', fontSize: '50px', margin: '20px', cursor: 'pointer'}} /> 
+                    <ThumbDownAltIcon sx={{color: '#1d37a3', fontSize: '50px', margin: '20px', cursor: 'pointer'}} />
 
 
                 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../../../images/logo/logo.png'
+import logo from '../../../images/Footer/FooterLogo.png';
 import { Grid, Typography } from '@mui/material';
 import FacebookIcon from '../../../images/social/facebook.png';
 import TwitterIcon from '../../../images/social/twitter.png';
@@ -31,11 +31,11 @@ const Footer = () => {
         <h2>Quick Link </h2>
 
         <ul className='UnorderLisrt'>
-            <Link className='Itam' to='supportCenter'>
+            <Link className='Itam' to='access'>
                 <li>Help Center Support</li>
             </Link>
 
-            <Link className='Itam' to='singlepage'>
+            <Link className='Itam' to='courses'>
                     <li>Best Courses
 </li>
             </Link>
@@ -45,7 +45,7 @@ const Footer = () => {
             </Link>
 
 
-            <Link className='Itam' to='termsConditions'>
+            <Link className='Itam' to='certification'>
                   <li>Terms &amp; Conditions</li>
             </Link>
             
@@ -63,7 +63,7 @@ const Footer = () => {
         <h2>Contact Us</h2>
 
        <div className="Contact-text">
-           <h6>eye-world.com</h6>
+           <h5>eye-world.com</h5>
            <h6>01908145097</h6>
            </div>
             

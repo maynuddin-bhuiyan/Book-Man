@@ -71,6 +71,7 @@ function App() {
           <PrivateRoute path="/access">
             <Access />
           </PrivateRoute>
+          
           <PrivateRoute path="/certification">
             <Certification />
           </PrivateRoute>

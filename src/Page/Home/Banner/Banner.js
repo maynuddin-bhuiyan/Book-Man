@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className='FullBanner'>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={5}>
+        <Grid className='TextReleted' item xs={5}  md={5} sm={12} >
           <Button># NO 1 Platform for learning</Button>
           <h1>Discover new things to enrich your
             skill anytime anywhere</h1>
@@ -21,7 +21,7 @@ const Banner = () => {
           <Button className='Button'>Enroll Now</Button>
 
         </Grid>
-        <Grid className='PhotoReleted' item xs={7}>
+        <Grid className='PhotoReleted' item xs={7}  md={7} sm={12}>
           <div>
             <img className='PhotoOne' src={banner} alt="" />
             <img className='PhotoTwo' src={shadow} alt="" />

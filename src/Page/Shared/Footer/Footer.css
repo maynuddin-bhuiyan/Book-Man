@@ -22,10 +22,10 @@
 }
 
 .Text .text-alin img {
-    width: 90px;
+    width: 100px;
     position: absolute;
-    top: 220px;
-    left: 30px;
+    top: 210px;
+    left: 35px;
 }
 
 
@@ -38,10 +38,10 @@
 
 .Link .UnorderLisrt .Itam{
     text-decoration: none;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-weight: 600;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 10px;
 }
 
 .Link h2 {
@@ -60,12 +60,13 @@
 
 
 .Contact-text {
-    border: 4px solid #13c5ce;
     width: 200px;
     margin: 0a;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    background: #FFFFFF;
+    color: #292bae;
 }
 
 
@@ -83,4 +84,32 @@
 }
 
 
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   
+
+    .Footer{
+        background: #292bae;
+        padding: 0px;
+    }
+    .Footer_Text{
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 50px !important;
+    }
+
+
+    .Footer_Text .Text {
+        display: none;
+    }
+
+
+    .Link{
+        height: 245px;
+    }
+    
+   
+
+
+    }
 
