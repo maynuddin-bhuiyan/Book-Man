@@ -1,70 +1,200 @@
-# Getting Started with Create React App
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#Start
 
-In the project directory, you can run:
 
-### `yarn start`
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#Website Name:
+--------------
+Book-Man
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+the website is based on programming-books.
+------------------------------------------
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#Let's talk about used technical skills:
+-----------------------------------------
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+Frontend Skills:
+----------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Programming languages: JavaScript (ES6).
+Other languages: HTML5, CSS3.
+JavaScript Libraries: ReactJS, jQuery, NodeJs.
+CSS Frameworks: Bootstrap, Material UI, Tailwind.
+
+Backend skills:
+---------------
+
+
+Back-End Frameworks: Express, Node.js. 
+Databases: MongoDB.
+
+
+APIs Skills:
+------------
+
+API:  REST API, JSON API.
+
+
+Other Skills:
+-------------
+
+Tools: Npm, Git.
+
+
+#Website Designation:
+---------------------
+
+
+
+
+The website is based on programming-books.
+
+The website is a header part in the top part, it's called Navigation,
+
+Navigation is, 
+Home, 
+Category,
+Learning,
+Blogs,
+if you are login then you see Dashboard.
+
+
+
+
+
+
+The home page has 8 parts, 
+like, 
+
+
+Navigation, 
+Banner, 
+Category, 
+Learning, 
+Blogs, 
+Partners, 
+Review, 
+Footer 
+
+And the Category parts have 4 opportunities.
+likes,
+
+Instructor part
+Courses part,
+Access Part.
+Certification part,
+
+
+Instructor:
+-----------
+The Most Important Instructor We Have.
+
+Courses:
+--------
+
+The Most Important Course Are, 
+A professional course feeds our continuous need to upgrade our skills. It enables candidates to identify their strengths as well as weaknesses.
+
+Access:
+-------
+
+We, Will, Provide You Lifetime Access,
+One of the best things about BookReader is that you can log in to your account from virtually anywhere, whenever you want, and access your courses easily! We strongly believe that students will benefit from the limitless educational possibilities this feature presents.
+Once you purchase a course, you'll have access for life, provided that your account is in good standing and BookReade continues to have a license to that course.
+
+Certification :
+---------------
+
+coming soon in a short time,  stay tuned,
+
+
+
+
+
+
+And there has a Login and Registration page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+And UI/Website LiveSiteLink......is 
+
+And Server Site  LiveSiteLink.............is ,
+
+
+
+
+
+Gethub Clint SiteLink,,,,, is https://github.com/uxmain/Book-Man
+Gethub Server SiteLink,,,,, is https://github.com/uxmain/Book-server
+
+
+
+
+One More Thing,
+
+Thank You,
+
+for your time and consideration. I look forward to speaking with you about your project.
+Stay Healthy, Stay Safe!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#End
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
