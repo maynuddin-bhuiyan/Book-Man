@@ -19,7 +19,7 @@ const CourseDetails = () => {
 
 
     useEffect( () => {
-        fetch('http://localhost:7000/course')
+        fetch('https://warm-bayou-66003.herokuapp.com/course')
         .then(res => res.json())
         .then(data => setCourseDetails(data))
     }, [])
