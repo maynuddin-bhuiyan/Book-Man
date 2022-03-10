@@ -162,9 +162,9 @@ And Server Site  LiveSiteLink.https://warm-bayou-66003.herokuapp.com,
 
 
 
+Github Clint SiteLink is https://github.com/uxmain/Book-Man
+Github Server SiteLink is https://github.com/uxmain/Book-server
 
-Gethub Clint SiteLink,,,,, is https://github.com/uxmain/Book-Man
-Gethub Server SiteLink,,,,, is https://github.com/uxmain/Book-server
 
 
 
