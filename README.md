@@ -155,9 +155,9 @@ And there has a Login and Registration page.
 
 
 
-And UI/Website LiveSiteLink......is 
+And UI/Website LiveSiteLink......is https://quizzical-pasteur-5baf49.netlify.app/,
 
-And Server Site  LiveSiteLink.............is ,
+And Server Site  LiveSiteLink.............is https://warm-bayou-66003.herokuapp.com,
 
 
 
